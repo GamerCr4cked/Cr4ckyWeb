@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Cr4ckyWeb",
+    "description": "The central hub for all my projects.",
+    "category": "GamerCr4cked's Sites",
+    "url": "https://zippedhost.dpdns.org",
+    "image": "/assets/cr4ckyweb-logo.png"
+  },
+  {
+    "name": "UnsaidPages",
+    "description": "Stories that were felt, not just written.",
+    "category": "GC's Sites",
+    "url": "https://unsaidpages.zippedhost.dpdns.org",
+    "image": "/assets/unsaidpages-logo.png"
+  }
+]

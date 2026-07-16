@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../data/projects.json';
+
+const categories = ["GamerCr4cked's Sites", "GC's Sites"];
+---
+
+<Layout title="Cr4ckyWeb Hub">
+	<main class="container mx-auto px-4 pb-16">
+		<Hero />
+		
+		{categories.map(category => (
+			<section class="mb-12">
+				<h2 class="text-3xl font-bold mb-6 text-gray-300">{category}</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{projects.filter(p => p.category === category).map(project => (
+						<ProjectCard {...project} />
+					))}
+				</div>
+			</section>
+		))}
+	</main>
+</Layout>
